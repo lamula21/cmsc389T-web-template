@@ -2,83 +2,249 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/scripts.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header>
 
-    <nav class="same-line">
-        <div class="topnav left">
-            <a href="#home">YOUR NAME</a>
-        </div>
-        <div class="topnav right">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Projects</a>
-            <!-- <a href="#about">About</a> -->
-        </div>
-    </nav>
+	<nav class="same-line">
+		<div class="topnav left">
+			<a href="#home">
+				Jose Valdivia
+			</a>
+		</div>
+		<div class="topnav right">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#project">Projects</a>
+			<a href="#skills">Skills</a>
+		</div>
+	</nav>
 </header>
 
 <body>
-    <section id="home">
+	<section id="home">
+		<div class="same-line-panel">
+			<img id="image" src=profile.png>
+			<div class="center">
+				<h1>Hi! I am Jose Valdivia 👋</h1>
+				<h2>Fullstack Developer & Undergraduate Student <br>@ UMD</h2>
+				<h3>Majors: Computer Science</h3>
+				<h3>Minor: Math</h3>
+			</div>
 
-        <div class="same-line-panel">
-            <img id="image" src=profile.png>
-            <div class="center">
-                <h1>YOUR NAME</h1>
-                <h2>Undergraduate Student</h2>
-                <h3>Majors, Minors</h3>
-            </div>
+		</div>
+	</section>
 
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h1 class="section-header">About Me</h1>
-        </div>
-        <div class="same-line-panel reveal">
-            <img id="logo" src=logo.png>
-            <div class="panel">
-                <p>Put your Bio Here</p>
-            </div>
+	<section id="about">
+		<div class="container">
+			<h1 class="section-header">About Me</h1>
+		</div>
+		<div class="same-line-panel reveal">
+			<img id="logo" src=logo.png>
+			<div class="panel">
+				<p>
+					I'm Jose, a full stack developer based in Maryland. Senior student at University of Maryland, pursuing a
+					Computer Science degree. </p>
 
-        </div>
-    </section>
-    <section id="project">
-        <div class="container">
-            <h1 class="section-header">Projects</h1>
-            <div class="row">
-                <div class="column reveal" style="background-color:#A4969B;">
-                    <h2>Project 1 Title</h2>
-                    <p>Description of Project 1...</p>
-                </div>
-                <div class="column reveal" style="background-color:#BFB5B9;">
-                    <h2>Project 2 Title</h2>
-                    <p>Description of Project 2...</p>
-                </div>
-                <div class="column reveal" style="background-color:#D1CACD;">
-                    <h2>Project 3 Title</h2>
-                    <p>Description of Project 3...</p>
-                </div>
-            </div>
-        </div>
-    </section>
+				<p>
+					I started my career in programming since 2022. Since then, I have
+					been working on personal projects and collaborating with different companies and organizations.
+				</p>
+
+				<p>
+					My goal is to create products that offer exceptional experiences, with an attractive, intuitive and
+					high-quality design, with a focus on the user experience.
+				</p>
+
+				<p>
+					I am willing to learn new technologies and face new work challenges that allow me to continue growing
+					professionally.
+				</p>
+
+			</div>
+
+		</div>
+	</section>
+	<section id="project">
+		<div class="container">
+			<h1 class="section-header">Projects</h1>
+			<div class="row">
+				<div class="column reveal">
+					<div class="card">
+						<h2>TerpNet</h2>
+						<p>A realtime chat app for UMD students. Leveraged websockets, authentication, upstash redis as database.
+						</p>
+						<img src="terpnet.png" alt="Realtime chat project" id="terpnet">
+					</div>
+				</div>
+
+				<div class="column reveal">
+					<div class="card">
+						<h2>Javascript Quiz</h2>
+						<p>A quiz game on random Javascript questions. Built with React.js and state manager Zustand.</p>
+						<img width="320" height="240" src="react-zustand-quizlet.png" alt="javascript quizlet project" id="quizlet">
+					</div>
+				</div>
+
+				<div class="column reveal">
+					<div class="card">
+						<h2>Tesla Clone</h2>
+						<p>A landing page of the Official Tesla Website built on top of Astro, the framework of the web.</p>
+						<video width="320" height="240" id="tesla-video" loop muted>
+							<source src="tesla.webm" type="video/webm">
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills">
+		<div class="container">
+			<h1 class="section-header">Skills</h1>
+			<div class="row">
+				<div class="column reveal">
+					<div class="card2">
+						<h2>Frontend</h2>
+						<ul class="grid">
+							<li>
+								<img src="assets/html.svg" alt="" width="50" height="50" class="icon">
+								<span>HTML</span>
+							</li>
+							<li>
+								<img src="assets/css.svg" alt="" width="50" height="50" class="icon">
+								<span>CSS</span>
+							</li>
+							<li>
+								<img src="assets/javascript.svg" alt="" width="50" height="50" class="icon">
+								<span>Javascript</span>
+							</li>
+							<li>
+								<img src="assets/typescript.svg" alt="" width="50" height="50" class="icon">
+								<span>Typescript</span>
+							</li>
+							<li>
+								<img src="assets/tailwindcss.svg" alt="" width="50" height="50" class="icon">
+								<span>Tailwindcss</span>
+							</li>
+							<li>
+								<img src="assets/react.svg" alt="" width="50" height="50" class="icon">
+								<span>React.js</span>
+							</li>
+							<li>
+								<img src="assets/nextjs.svg" alt="" width="50" height="50" class="icon">
+								<span>Next.js</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="column reveal">
+					<div class="card2">
+						<h2>Backend</h2>
+						<ul class="grid">
+							<li>
+								<img src="assets/nodejs.svg" alt="" width="50" height="50" class="icon">
+								<span>Node.js</span>
+							</li>
+							<li>
+								<img src="assets/graphql.svg" alt="" width="50" height="50" class="icon">
+								<span>GraphQL</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="column reveal">
+					<div class="card2">
+						<h2>Database</h2>
+						<ul class="grid">
+							<li>
+								<img src="assets/mysql.svg" alt="" width="50" height="50" class="icon">
+								<span>MySQL</span>
+							</li>
+							<li>
+								<img src="assets/mongodb.svg" alt="" width="50" height="50" class="icon">
+								<span>MongoDB</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 <footer>
-    <div class="leftFooter">
-        YOUREMAIL@EMAIL.COM
-    </div>
-    <div class="rightFooter">
-        <a href="https://www.google.com/" class="fa fa-github" style="font-size:36px"></a>
+	<div class="leftFooter">
+		jvaldiv8@terpmail.umd.edu
+	</div>
 
-    </div>
-    <div class="rightFooterr">
-        <a href="https://www.google.com/" class="fa fa-linkedin" style="font-size:36px"></a>
+	<div class="">
+		<a href="https://github.com/lamula21" class="fa fa-github" style="font-size:36px; margin-left: 0;"
+			target="_blank"></a>
+	</div>
 
-    </div>
+	<div class="rightFooterr">
+		<a href="https://www.linkedin.com/in/joseavr/" class="fa fa-linkedin" style="font-size:36px" target="_blank"></a>
+	</div>
 </footer>
 
 </html>
+
+<style>
+	#tesla-video,
+	#quizlet,
+	#terpnet {
+		width: 100%;
+		height: 240px;
+
+		object-fit: cover;
+		object-position: center;
+
+		border-radius: 10px;
+	}
+
+	.card {
+		padding: 1rem;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.card2 {
+		padding: 3rem;
+	}
+
+	.card:hover {
+		border-radius: 10px;
+		background-color: #27272a28;
+		cursor: pointer;
+		scale: 1.05;
+	}
+
+	.grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+		column-gap: 2rem;
+		row-gap: 2rem;
+
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		row-gap: 8px;
+	}
+
+	.icon {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+</style>
