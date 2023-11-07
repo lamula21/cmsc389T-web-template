@@ -7,3 +7,7 @@
 - Added a video mp4 and converted into webp format for optimization. Integrated some Javascript to play the video when user hovers over it. The video stops when user does not hover over it.
 
 Jose Valdivia
+
+https://lamula21.github.io/cmsc389T-web-template/
+
+https://terpconnect.umd.edu/~jvaldiv8/cmsc389T-web-template/
